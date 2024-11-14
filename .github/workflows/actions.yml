@@ -31,7 +31,7 @@ jobs:
       - name: Run tests with pytest
         run: |
           export PYTHONPATH=$PWD
-          pytest --cov=./tests/
+          pytest --cov=./tests/./
 
       - name: Upload coverage report to Coveralls
         run: coveralls
