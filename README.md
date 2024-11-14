@@ -1,4 +1,17 @@
 [![Start tests](https://github.com/ApathyInMyHeart/testirovanie_laba2/actions/workflows/actions.yml/badge.svg)](https://github.com/ApathyInMyHeart/testirovanie_laba2/actions/workflows/actions.yml)
+[![Coverage Status](https://coveralls.io/repos/github/ApathyInMyHeart/testirovanie_laba2/badge.svg?branch=master)](https://coveralls.io/github/ApathyInMyHeart/testirovanie_laba2?branch=master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=bugs)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ApathyInMyHeart_testirovanie_laba2&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=ApathyInMyHeart_testirovanie_laba2)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
+[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=ApathyInMyHeart_testirovanie_laba2)
 # testing2
 Проект для Лабораторной работы № 2 в рамках курса Тестирование ПО
 
