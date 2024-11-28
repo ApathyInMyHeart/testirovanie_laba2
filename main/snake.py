@@ -7,42 +7,37 @@ class Snake:
         self.directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         self.current_direction = random.choice(self.directions)
 
-
     def add_point(self, target_point: Vector2D):
         last_point = self.points[-1]
         dx = target_point.x - last_point.x
         dy = target_point.y - last_point.y
 
-        steps = max(abs(dx), abs(dy))
-        if steps == 0:
-            return
+        step_x = 1 if dx > 0 else -1 if dx < 0 else 0
+        step_y = 1 if dy > 0 else -1 if dy < 0 else 0
 
-        step_x = dx / steps if steps else 0
-        step_y = dy / steps if steps else 0
+        abs_dx, abs_dy = abs(dx), abs(dy)
 
-        for _ in range(steps):
-            new_point = Vector2D(round(last_point.x + step_x), round(last_point.y + step_y))
-            if self._is_collision(new_point):
+        while abs_dx > 0 or abs_dy > 0:
+            if abs_dx > 0:  # Движение по X
+                new_point = Vector2D(last_point.x + step_x, last_point.y)
+                abs_dx -= 1
+            elif abs_dy > 0:  # Движение по Y
+                new_point = Vector2D(last_point.x, last_point.y + step_y)
+                abs_dy -= 1
+            else:
+                break
+
+            if self._is_collision(new_point):  # Проверка на столкновение
                 return
-            self.points.append(new_point)
-            last_point = new_point
+
+            self.points.append(new_point)  # Запись новой точки
+            last_point = new_point  # Обновление текущей точки
 
     def _is_collision(self, new_point: Vector2D):
         for point in self.points:
             if point == new_point:
                 return True
         return False
-
-    def _choose_safe_direction(self):
-        safe_directions = []
-        for dx, dy in self.directions:
-            new_point = Vector2D(self.points[-1].x + dx, self.points[-1].y + dy)
-            if not self._is_collision(new_point):
-                safe_directions.append((dx, dy))
-
-        if not safe_directions:
-            return self.current_direction
-        return random.choice(safe_directions)
 
     def __repr__(self):
         return f"Snake({self.points})"
