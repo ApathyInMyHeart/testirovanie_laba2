@@ -13,6 +13,11 @@ class TestSnake3D(unittest.TestCase):
         snake.add_point(Vector3D(1, 2, 0))
         self.assertEqual(len(snake.points), 4) # начальная + 3
 
+    def test_zero_step(self):
+        snake = Snake3D(Vector3D(0, 0, 0))
+        snake.add_point(Vector3D(0, 0, 0))
+        self.assertEqual(len(snake.points), 1) # начальная + 3
+
     def test_add_point_large_step(self):
         snake = Snake3D(Vector3D(0, 0, 0))
         snake.add_point(Vector3D(5, 1, 2))
