@@ -13,7 +13,7 @@ class TestSnake(unittest.TestCase):
         snake.add_point(Vector2D(1, 2))
         self.assertEqual(len(snake.points), 4)
 
-    def test_add_point_small_step(self):
+    def test_zero_step(self):
         snake = Snake(Vector2D(0, 0))
         snake.add_point(Vector2D(0, 0))
         self.assertEqual(len(snake.points), 1)
