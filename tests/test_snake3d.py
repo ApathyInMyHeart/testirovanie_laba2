@@ -38,13 +38,13 @@ class TestSnake3D(unittest.TestCase):
 
     def test_no_collisions_long(self):
         snake = Snake3D(Vector3D(0, 0, 0))
-        snake.add_point(Vector3D(10, 0, 0))
-        snake.add_point(Vector3D(10, 10, 0))
-        snake.add_point(Vector3D(10, 10, 10))
-        snake.add_point(Vector3D(0, 10, 10))
-        snake.add_point(Vector3D(0, 0, 10))
-        snake.add_point(Vector3D(0, 0, 0))
-        self.assertEqual(len(snake.points), 60)
+        snake.add_point(Vector3D(7, 5, 6))
+        snake.add_point(Vector3D(9, 8, 3))
+        snake.add_point(Vector3D(12, 4, 5))
+        snake.add_point(Vector3D(6, 6, 12))
+        snake.add_point(Vector3D(15, 11, 7))
+        snake.add_point(Vector3D(13, 6, 9))
+        self.assertEqual(len(snake.points), 79)
 
     def test_collisions_long(self):
         snake = Snake3D(Vector3D(0, 0, 5))

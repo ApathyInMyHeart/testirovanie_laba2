@@ -38,11 +38,11 @@ class TestSnake(unittest.TestCase):
 
     def test_no_collisions_long(self):
         snake = Snake(Vector2D(0, 0))
-        snake.add_point(Vector2D(10, 0))
-        snake.add_point(Vector2D(10, 10))
-        snake.add_point(Vector2D(0, 10))
-        snake.add_point(Vector2D(0, 0))
-        self.assertEqual(len(snake.points), 40)
+        snake.add_point(Vector2D(10, 5))
+        snake.add_point(Vector2D(12, 7))
+        snake.add_point(Vector2D(18, 13))
+        snake.add_point(Vector2D(21, 6))
+        self.assertEqual(len(snake.points), 42)
 
     def test_collisions_long(self):
         snake = Snake(Vector2D(2, 0))
